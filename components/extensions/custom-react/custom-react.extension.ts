@@ -8,7 +8,9 @@ export class CustomReact {
 
   static async provider([envs, react]: [EnvsMain, ReactMain]) {
 
-    const customReactEnv = react.compose([]);
+    const customReactEnv = react.compose([
+
+    ]);
 
     envs.registerEnv(customReactEnv);
     return new CustomReact(react);

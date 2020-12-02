@@ -57,7 +57,7 @@
        **/
       "teambit.react/react": {}
     },
-    "{react-ui/*}": {
+    "{react-ui}": {
       "my-org.my-scope/extensions/custom-react": {}
     }
   }
