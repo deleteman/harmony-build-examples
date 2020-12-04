@@ -4,26 +4,26 @@ importers:
       '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.5
       '@testing-library/react': registry.npmjs.org/@testing-library/react/11.2.2_react-dom@17.0.1+react@17.0.1
       '@types/classnames': registry.npmjs.org/@types/classnames/2.2.11
+      '@types/react': registry.npmjs.org/@types/react/17.0.0
       classnames: registry.npmjs.org/classnames/2.2.6
+      core-js: registry.npmjs.org/core-js/3.8.0
       react: registry.npmjs.org/react/17.0.1
       react-dom: registry.npmjs.org/react-dom/17.0.1_react@17.0.1
     devDependencies:
       '@types/jest': registry.npmjs.org/@types/jest/26.0.16
-      '@types/react': registry.npmjs.org/@types/react/16.9.43
-      '@types/react-router-dom': registry.npmjs.org/@types/react-router-dom/5.1.6
-      core-js: registry.npmjs.org/core-js/3.8.0
     specifiers:
-      '@babel/runtime': 7.12.5
+      '@babel/runtime': ^7.12.5
       '@testing-library/react': 11.2.2
       '@types/classnames': 2.2.11
       '@types/jest': ~26.0.16
-      '@types/react': 16.9.43
-      '@types/react-router-dom': ^5.1.6
+      '@types/react': 17.0.0
       classnames: 2.2.6
       core-js: ^3.8.0
       react: 17.0.1
       react-dom: 17.0.1
   components/build-tasks/hello-world:
+    specifiers: {}
+  components/build-tasks/print-cmp-name-task:
     specifiers: {}
   components/extensions/custom-react:
     specifiers: {}
@@ -151,14 +151,6 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@types/classnames/-/classnames-2.2.11.tgz'
     version: 2.2.11
-  registry.npmjs.org/@types/history/4.7.8:
-    dev: true
-    name: '@types/history'
-    resolution:
-      integrity: sha512-S78QIYirQcUoo6UJZx9CSP0O2ix9IaeAXwQi26Rhr/+mg7qqPy8TzaxHSUut7eGjL8WmLccT7/MXf304WjqHcA==
-      registry: 'https://node.bit.dev/'
-      tarball: 'https://registry.npmjs.org/@types/history/-/history-4.7.8.tgz'
-    version: 4.7.8
   registry.npmjs.org/@types/istanbul-lib-coverage/2.0.3:
     name: '@types/istanbul-lib-coverage'
     resolution:
@@ -203,47 +195,24 @@ packages:
       tarball: 'https://registry.npmjs.org/@types/node/-/node-14.14.10.tgz'
     version: 14.14.10
   registry.npmjs.org/@types/prop-types/15.7.3:
-    dev: true
+    dev: false
     name: '@types/prop-types'
     resolution:
       integrity: sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.3.tgz'
     version: 15.7.3
-  registry.npmjs.org/@types/react-router-dom/5.1.6:
-    dependencies:
-      '@types/history': registry.npmjs.org/@types/history/4.7.8
-      '@types/react': registry.npmjs.org/@types/react/16.9.43
-      '@types/react-router': registry.npmjs.org/@types/react-router/5.1.8
-    dev: true
-    name: '@types/react-router-dom'
-    resolution:
-      integrity: sha512-gjrxYqxz37zWEdMVvQtWPFMFj1dRDb4TGOcgyOfSXTrEXdF92L00WE3C471O3TV/RF1oskcStkXsOU0Ete4s/g==
-      registry: 'https://node.bit.dev/'
-      tarball: 'https://registry.npmjs.org/@types/react-router-dom/-/react-router-dom-5.1.6.tgz'
-    version: 5.1.6
-  registry.npmjs.org/@types/react-router/5.1.8:
-    dependencies:
-      '@types/history': registry.npmjs.org/@types/history/4.7.8
-      '@types/react': registry.npmjs.org/@types/react/16.9.43
-    dev: true
-    name: '@types/react-router'
-    resolution:
-      integrity: sha512-HzOyJb+wFmyEhyfp4D4NYrumi+LQgQL/68HvJO+q6XtuHSDvw6Aqov7sCAhjbNq3bUPgPqbdvjXC5HeB2oEAPg==
-      registry: 'https://node.bit.dev/'
-      tarball: 'https://registry.npmjs.org/@types/react-router/-/react-router-5.1.8.tgz'
-    version: 5.1.8
-  registry.npmjs.org/@types/react/16.9.43:
+  registry.npmjs.org/@types/react/17.0.0:
     dependencies:
       '@types/prop-types': registry.npmjs.org/@types/prop-types/15.7.3
-      csstype: registry.npmjs.org/csstype/2.6.14
-    dev: true
+      csstype: registry.npmjs.org/csstype/3.0.5
+    dev: false
     name: '@types/react'
     resolution:
-      integrity: sha512-PxshAFcnJqIWYpJbLPriClH53Z2WlJcVZE+NP2etUtWQs2s7yIMj3/LDKZT/5CHJ/F62iyjVCDu2H3jHEXIxSg==
+      integrity: sha512-aj/L7RIMsRlWML3YB6KZiXB3fV2t41+5RBGYF8z+tAKU43Px8C3cYUZsDvf1/+Bm4FK21QWBrDutu8ZJ/70qOw==
       registry: 'https://node.bit.dev/'
-      tarball: 'https://registry.npmjs.org/@types/react/-/react-16.9.43.tgz'
-    version: 16.9.43
+      tarball: 'https://registry.npmjs.org/@types/react/-/react-17.0.0.tgz'
+    version: 17.0.0
   registry.npmjs.org/@types/yargs-parser/15.0.0:
     name: '@types/yargs-parser'
     resolution:
@@ -385,7 +354,7 @@ packages:
       tarball: 'https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.8.0.tgz'
     version: 3.8.0
   registry.npmjs.org/core-js/3.8.0:
-    dev: true
+    dev: false
     name: core-js
     requiresBuild: true
     resolution:
@@ -393,14 +362,14 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/core-js/-/core-js-3.8.0.tgz'
     version: 3.8.0
-  registry.npmjs.org/csstype/2.6.14:
-    dev: true
+  registry.npmjs.org/csstype/3.0.5:
+    dev: false
     name: csstype
     resolution:
-      integrity: sha512-2mSc+VEpGPblzAxyeR+vZhJKgYg0Og0nnRi7pmRXFYYxSfnOnW8A5wwQb4n4cE2nIOzqKOAzLCaEX6aBmNEv8A==
+      integrity: sha512-uVDi8LpBUKQj6sdxNaTetL6FpeCqTjOvAQuQUa/qAqq8oOd4ivkbhgnqayl0dnPal8Tb/yB1tF+gOvCBiicaiQ==
       registry: 'https://node.bit.dev/'
-      tarball: 'https://registry.npmjs.org/csstype/-/csstype-2.6.14.tgz'
-    version: 2.6.14
+      tarball: 'https://registry.npmjs.org/csstype/-/csstype-3.0.5.tgz'
+    version: 3.0.5
   registry.npmjs.org/diff-sequences/26.6.2:
     dev: true
     engines:

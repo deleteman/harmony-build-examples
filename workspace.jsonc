@@ -51,14 +51,14 @@
     /**
      * "*" is a special rule which applied on all components in the workspace.
      **/
-    "{extensions/*},{build-tasks/*}": {
+    "{extensions/*}": {
       /**
        * uncomment to apply the react environment on all components.
        **/
-      "teambit.react/react": {}
+      "teambit.harmony/aspect": {}
     },
     "{react-ui/*}": {
-      "my-org.my-scope/extensions/custom-react": {}
+      "extensions/custom-react": {}
     }
   }
 }

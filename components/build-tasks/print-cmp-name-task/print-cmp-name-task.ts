@@ -5,16 +5,20 @@ import {
   ComponentResult,
 } from "@teambit/builder";
 
-export class ExampleTask implements BuildTask {
+export class PrintCmpNameTask implements BuildTask {
   constructor(readonly aspectId: string, readonly name: string) {}
 
   async execute(context: BuildContext): Promise<BuiltTaskResult> {
     const componentsResults: ComponentResult[] = [];
+    
     context.capsuleNetwork.seedersCapsules.forEach((capsule) => {
-      console.log("Hello World!", capsule.component.id);
+
+      console.log(`The current component name is: ${capsule.component.id.name}`)
+  
       componentsResults.push({
         component: capsule.component,
-        metadata: { customProp: "hello-world" },
+        metadata: { customProp: capsule.component.id.name},
+
       });
     });
     return {
@@ -22,3 +26,4 @@ export class ExampleTask implements BuildTask {
     };
   }
 }
+
